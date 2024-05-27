@@ -17,7 +17,7 @@ class _Question2State extends State<Question2> {
     return Scaffold(
       body: Center(
         child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 150),
+          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 160),
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius:
@@ -34,11 +34,11 @@ class _Question2State extends State<Question2> {
                   opacity: 0.6),
             ),
             child: Card(
-              margin: EdgeInsets.symmetric(vertical: 10),
+              // margin: EdgeInsets.symmetric(vertical: 10),
               color: Colors.transparent,
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -48,42 +48,146 @@ class _Question2State extends State<Question2> {
                         Row(
                           children: [
                             ClipRRect(
-                              borderRadius: BorderRadius.circular(24),
-                              child: Image.asset(
-                                'assets/q2icon.png',
+                              borderRadius: BorderRadius.circular(12),
+                              child: Container(
+                                color: Colors.white,
+                                child: Image.network(
+                                  'https://raw.githubusercontent.com/saakhani/appdev-s24-final/main/assets/q2icon.png',
+                                  width: 60,
+                                ),
                               ),
                             ),
-                            SizedBox(
-                              width: 10,
+                            const SizedBox(
+                              width: 18,
                             ),
-                            Text("LOREM IPSUM",
-                                style: GoogleFonts.roboto(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                  color: Color.fromARGB(255, 133, 133, 133),
-                                )),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Analytic Data",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.roboto(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w700,
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                    )),
+                                Text("Apple Officer",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.roboto(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color.fromARGB(255, 172, 172, 172),
+                                    )),
+                              ],
+                            ),
                           ],
                         ),
-                        Column(
-                          children: [
-                            Text("LOREM IPSUM",
-                                style: GoogleFonts.roboto(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                  color: Color.fromARGB(255, 133, 133, 133),
-                                )),
-                          ],
+                        Icon(
+                          Icons.bookmark_added,
+                          size: 24,
+                          color: Colors.white,
                         )
                       ],
                     ),
-                    Text(
-                      'LOREM IPSUM',
-                      style: GoogleFonts.roboto(
-                        fontSize: 16,
-                        color: Color.fromARGB(255, 133, 133, 133),
-                        fontWeight: FontWeight.w500,
-                      ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Chip(
+                            padding: EdgeInsets.all(1.5),
+                            side: BorderSide(width: 0, color: Colors.black),
+                            label: Text("Full Time",
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromARGB(255, 172, 172, 172),
+                                )),
+                            backgroundColor: Color.fromARGB(244, 0, 0, 0),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25))),
+                        SizedBox(width: 10),
+                        Chip(
+                            padding: EdgeInsets.all(1.5),
+                            side: BorderSide(width: 0, color: Colors.black),
+                            label: Text("Offline",
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromARGB(255, 172, 172, 172),
+                                )),
+                            backgroundColor: Color.fromARGB(244, 0, 0, 0),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25))),
+                        SizedBox(width: 10),
+                        Chip(
+                            padding: EdgeInsets.all(1.5),
+                            side: BorderSide(width: 0, color: Colors.black),
+                            label: Text("1 Years EXP",
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color.fromARGB(255, 172, 172, 172),
+                                )),
+                            backgroundColor: Color.fromARGB(244, 0, 0, 0),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25))),
+                      ],
                     ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                        "Discover how you can make an impact: see our areas of work, worldwide locations, and opportunities for students",
+                        style: GoogleFonts.roboto(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromARGB(255, 172, 172, 172),
+                        )),
+                    SizedBox(height: 25),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("\$250/month",
+                            style: GoogleFonts.roboto(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                            )),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+    minimumSize: Size.zero, // Set this
+    padding: EdgeInsets.zero, // and this
+  ),
+                          onPressed: () {},
+                          child: Row(
+                            
+                            children: [
+                                                            SizedBox(
+                                width: 5,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text('1 week ago',
+                                style: GoogleFonts.roboto(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                                            )),
+                              ), // <-- Text
+                              Icon(
+                                // <-- Icon
+                                Icons.arrow_circle_right_sharp,
+                                color: Colors.black,
+                                size: 40,
+                                
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
                   ],
                 ),
               ),

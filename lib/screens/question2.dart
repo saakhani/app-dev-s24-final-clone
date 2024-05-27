@@ -24,14 +24,14 @@ class _Question2State extends State<Question2> {
                 BorderRadius.circular(40), // Set the border radius here
           ),
           child: Container(
-            margin: EdgeInsets.all(16),
+            margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40),
               image: const DecorationImage(
                   image: NetworkImage(
                       'https://raw.githubusercontent.com/saakhani/appdev-s24-final/main/assets/q2bg.jpg'),
                   fit: BoxFit.cover,
-                  opacity: 0.6),
+                  opacity: 0.18),
             ),
             child: Card(
               // margin: EdgeInsets.symmetric(vertical: 10),
@@ -156,32 +156,30 @@ class _Question2State extends State<Question2> {
                               color: Color.fromARGB(255, 255, 255, 255),
                             )),
                         ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-    minimumSize: Size.zero, // Set this
-    padding: EdgeInsets.zero, // and this
-  ),
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size.zero, // Set this
+                            padding: EdgeInsets.zero, // and this
+                          ),
                           onPressed: () {},
                           child: Row(
-                            
                             children: [
-                                                            SizedBox(
+                              SizedBox(
                                 width: 5,
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text('1 week ago',
-                                style: GoogleFonts.roboto(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w500,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                                            )),
+                                    style: GoogleFonts.roboto(
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w500,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    )),
                               ), // <-- Text
                               Icon(
                                 // <-- Icon
                                 Icons.arrow_circle_right_sharp,
                                 color: Colors.black,
                                 size: 40,
-                                
                               ),
                             ],
                           ),

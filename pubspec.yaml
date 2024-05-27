@@ -17,6 +17,7 @@ dependencies:
   firebase_core: ^2.27.0
   firebase_storage: ^11.7.6
   google_sign_in: ^6.2.1
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +34,5 @@ flutter:
 assets:
   - assets/images/google_logo.png
   - assets/q2bg.jpg
+  - assets/q2icon.png
+

@@ -10,7 +10,7 @@ Future<List<String>> tests(TestsRef ref) {
 
 class TestService {
   Future<List<String>> getAllTests() async {
-    final qs = await FirebaseFirestore.instance.collection('tests').get();
+    final qs = await FirebaseFirestore.instance.collection('products').get();
     List<String> tbr =
         qs.docs.first['items'].map<String>((doc) => doc as String).toList();
     return tbr;

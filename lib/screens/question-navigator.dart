@@ -1,5 +1,4 @@
-import 'package:AppDevFinal/screens/home_page.dart';
-import 'package:AppDevFinal/screens/login.dart';
+import 'package:AppDevFinal/screens/question1.dart';
 import 'package:AppDevFinal/screens/question2.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +19,7 @@ class _QuestionNavigatorState extends State<QuestionNavigator> {
         ElevatedButton(onPressed: (){
           Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => LoginScreen()),
+              MaterialPageRoute(builder: (context) => Question1()),
               );
         },
         child: Text("Question 1")),
